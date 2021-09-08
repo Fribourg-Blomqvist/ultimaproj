@@ -25,7 +25,7 @@ $recettes = select_all_recettes();
             <span id="spanbot" class="spanbotclose"></span>
         </div>
         <div class="logo">
-            <img src="requ/header.php/img/logo.png" alt="Logo">
+            <img src="../Hackathon/assets/img/logo.png" alt="Logo">
             <span>Online <br> Bio</span>
         </div>
         <ul id="menu">

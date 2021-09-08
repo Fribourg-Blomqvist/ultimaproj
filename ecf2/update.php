@@ -48,7 +48,7 @@ if (isset($_POST['title'], $_POST['description'], $_POST['pays'], $_POST['legume
 
                         update_recettes_by_id($title, $description, $pays, $legumes, $fruits, $images_name, $id);
                         $message = 'Félicitation!! Recette modifiée';
-                        header("location:http://localhost/recettes-bio/crud.php?message=$message");
+                        header("location:http://localhost/recettes-bio2/crud.php?message=$message");
 
                     endif;
                 endif;
@@ -57,10 +57,10 @@ if (isset($_POST['title'], $_POST['description'], $_POST['pays'], $_POST['legume
         endif;
 
     else :
-        // header('location:http://localhost/recettes-bio/ecf2/add.php');
+        // header('location:http://localhost/recettes-bio2/ecf2/add.php');
         echo "données vides";
     endif;
 else :
-    // header('location:http://localhost/recettes-bio/ecf2/add.php');
+    // header('location:http://localhost/recettes-bio2/ecf2/add.php');
     echo "données non créées";
 endif;

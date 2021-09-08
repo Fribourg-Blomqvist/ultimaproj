@@ -2,7 +2,7 @@
 session_start();
 //var_dump($_SESSION)
 if ($_SESSION['admin'] != 1) {
-    header('location:http://localhost/recettes-bio/ecf2/crud.php');
+    header('location:http://localhost/recettes-bio2/ecf2/crud.php');
 }
 ?>
 <!DOCTYPE html>

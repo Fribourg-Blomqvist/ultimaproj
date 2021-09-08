@@ -13,17 +13,17 @@ if (!empty($_POST['pseudo']) && !empty($_POST['mail']) && !empty($_POST['passwor
 
     adduser($_POST['pseudo'], $_POST['mail'], $pwh);
     $_SESSION["user"] = $_POST['pseudo'];
-    header('location:http://localhost/recettes-bio/ecf2/crud.php');
+    header('location:http://localhost/recettes-bi2o/ecf2/crud.php');
   } else {
     //créer mess 2 mots pass non identique
     $message = 'Erreur mot de passe non identique';
-    header("location:http://localhost/recettes-bio/ecf2/formulaire.php?message=$message");
+    header("location:http://localhost/recettes-bio2/ecf2/formulaire.php?message=$message");
   }
 } else { //creer message erreur
   //créeer message pesudo vide
   //si mail vid
   //si password est vide
-  header('location:http://localhost/recettes-bio/ecf2/formulaire.php');
+  header('location:http://localhost/recettes-bio2/ecf2/formulaire.php');
 }
 
 
