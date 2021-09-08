@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	width: 150px;
+	height: 150px;
+	box-sizing: content;
+}
+li {
+	display: flex;
+    justify-content: flex-end;
+}
+
+.tablo {
+	max-width: 80%;
+	margin:0 auto;
+	
+	z-index: 1;
+}
+
+
+td {
+	width: 120px;
+	height: 120px;
+	text-align: center;
+
+	border-bottom: 1px solid rgb(135, 212, 90);
+}
+ th{
+	border-bottom: 1px solid rgb(135, 212, 90);
+ }
+a{
+	list-style: none;
+	
+}
+a:hover {
+	color :rgb(69, 182, 69);
+	/* font-size: 2rem; */
+}

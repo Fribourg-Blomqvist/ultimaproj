@@ -1,0 +1,82 @@
+.shadow-pict {
+    border-radius: 20px;
+    box-shadow : 5px grey;
+}
+
+ h2 {
+    justify-content: center;
+    display: flex;
+}
+/**lienImg**/
+.producteurs {
+    display: flex;
+    justify-content: center;
+
+}
+.pro1 {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15%;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(104, 214, 104);
+}
+a:hover {
+    color: saddlebrown;
+}
+/********/
+.para {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.deuxPics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.deuxPics img  {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.troisPics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.troisPics img  {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 2px slategray;
+}
+   
+/*****media queries*****/
+
+@media screen and (max-width:980px) {
+    .troisPics {
+        flex-direction: column;
+        align-items: center;
+        padding-top:2px;
+        padding-bottom:2px ;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .deuxPics,.producteurs{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+
