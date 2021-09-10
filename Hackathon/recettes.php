@@ -117,7 +117,7 @@ $recettes = select_all_recettes();
     </footer>
     <!-- END FOOTER -->
     <script src="assets/javascript/script.js"></script>
-    <script src="Hackathon/assets/javascript/formu.js"></script>
+    <script src="ecf2/assets/javascript/formu.js"></script>
 </body>
 
 </html>

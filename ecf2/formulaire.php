@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulaire signup/login</title>
   <script src="https://kit.fontawesome.com/fd11eb9a8c.js" crossorigin="anonymous"></script>
-  <script src="../Hackathon/assets/javascript/jqueryfirst.js"></script>
+  <script src="../ecf2/assets/javascript/jqueryfirst.js"></script>
   <link rel="stylesheet" href="../ecf2/assets/css/form.css">
   <link rel="stylesheet" href="../Hackathon/assets/css/style.css">
 </head>
@@ -43,6 +43,6 @@
 
 
 
-  <script src="../Hackathon/assets/javascript/formu.js"></script>
+  <script src="../ecf2/assets/javascript/formu.js"></script>
 </body>
 </html>

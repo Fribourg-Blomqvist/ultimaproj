@@ -1234,17 +1234,24 @@ footer>a {
 
 }
 
-footer>a i {
+footer i {
     color: #079B2D;
+    transition: 1s;
+
+    
+ 
+}
+i:hover{
+background-color: cornsilk;
+border-radius:100%;
+width: 45px;
+
 
 }
 
- /* i:hover{
-    transform: rotate(45deg);
-    background-color: rgba(47, 27, 6, 0.993);
-    width: 35px;
 
-} */
+ 
+
 
 
 #logofooter {
