@@ -46,7 +46,7 @@ nav {
     z-index: 2;
 }
 /* -----Logo----- */
-.logo {
+.logo  {
     width: 180px;
     height: 100px;
     display: flex;
@@ -54,7 +54,7 @@ nav {
     justify-content: space-around;
 }
 
-.logo img {
+.logo img,.logo1 {
     height: 80%;
 }
 
@@ -66,7 +66,7 @@ nav {
 	-webkit-animation: ob 3s cubic-bezier(0.075, 0.820, 0.165, 1.000) infinite alternate-reverse forwards;
 	        animation: ob 3s cubic-bezier(0.075, 0.820, 0.165, 1.000) infinite alternate-reverse forwards;
 }
-/* -----animation Logo----- */
+/* -----anim Logo----- */
  
 @-webkit-keyframes ob {
   from {
@@ -193,7 +193,7 @@ nav {
 
 
 
-/* -BURGER- */
+/* -----BURGER----- */
 
 #burger {
     display: none;
@@ -482,9 +482,9 @@ nav {
 
 }
 
-/* -END BURGER- */
+/* -----END BURGER----- */
 
-/* -RESPONSIVE- */
+/* -----RESPONSIVE----- */
 @media (max-width:1100px) {
 
     nav {
@@ -542,7 +542,7 @@ nav {
 
 }
 
-/* -END RESPONSIVE- */
+/* -----END RESPONSIVE----- */
 
 /* -----END MENU----- */
 
@@ -609,6 +609,8 @@ h1 {
 /* -----END PRESENTATION----- */
 
 /* -----PRODUCERS----- */
+
+
 
 #producers {
     display: flex;
