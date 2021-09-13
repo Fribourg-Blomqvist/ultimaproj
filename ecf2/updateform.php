@@ -39,7 +39,7 @@ if (isset($_GET['selectId'])) :
   </body>
 
   </html>
-  <form action="ecf2/update.php?id=<?php echo $id; ?>" method="post" enctype="multipart/form-data">
+  <form action="update.php?id=<?php echo $id; ?>" method="post" enctype="multipart/form-data">
     <label for="name">Title :</label>
     <input type="text" name="title" value="<?php echo $recettes['title']; ?>" required><br>
     <label for="model">Description :</label>

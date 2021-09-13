@@ -26,6 +26,7 @@ function addrecettes(string $title, string $description, string $pays, string $l
         echo "Erreur : " . $e->getMessage();
     }
 }
+
 //Ajouter un utilisateur
 function adduser(string $pseudo, string $mail, string $password)
 {
@@ -41,6 +42,21 @@ function adduser(string $pseudo, string $mail, string $password)
         $query->bindValue(':mail', $mail);
         $query->bindValue(':password', $password);
         $query->execute();
+    } catch (PDOException $e) {
+        echo "Erreur : " . $e->getMessage();
+    }
+}
+//verification des utilisateurs
+function selectuser(string $pseudo)
+{
+    $dbco = NULL;
+    connexion($dbco);
+    try {
+        $query = $dbco->prepare("SELECT pseudo, password, role FROM user WHERE pseudo=:pseudo");
+        $query->bindValue(':pseudo', $pseudo, PDO::PARAM_STR);
+        $query->execute();
+        $result = $query->fetch(PDO::FETCH_ASSOC);
+        return $result;
     } catch (PDOException $e) {
         echo "Erreur : " . $e->getMessage();
     }
@@ -62,21 +78,7 @@ function select_all_recettes()
         echo "Erreur : " . $e->getMessage();
     }
 }
-//verification des utilisateur
-function selectuser(string $pseudo)
-{
-    $dbco = NULL;
-    connexion($dbco);
-    try {
-        $query = $dbco->prepare("SELECT pseudo, password, role FROM user WHERE pseudo=:pseudo");
-        $query->bindValue(':pseudo', $pseudo, PDO::PARAM_STR);
-        $query->execute();
-        $result = $query->fetch(PDO::FETCH_ASSOC);
-        return $result;
-    } catch (PDOException $e) {
-        echo "Erreur : " . $e->getMessage();
-    }
-}
+
 //Selectionner une recette par son Id
 function select_recettes_by_id(int $id)
 {
@@ -92,6 +94,7 @@ function select_recettes_by_id(int $id)
         echo "Erreur : " . $e->getMessage();
     }
 }
+
 function update_recettes_by_id(
     string $title,
     string $description,

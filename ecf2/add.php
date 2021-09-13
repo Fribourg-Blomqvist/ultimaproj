@@ -2,7 +2,7 @@
 require '../config/validData.php';
 require '../config/datamanager.php';
 
-// var_dump($_POST['title'], $_POST['description'], $_POST['pays'], $_POST['legumes'], $_POST['fruits'], $_POST['images']);
+
 $ext = array('png', 'jpg', 'jpeg', 'gif');
 
 if (isset($_POST['title'], $_POST['description'], $_POST['pays'], $_POST['legumes'], $_POST['fruits'], $_FILES['images'])) :
@@ -34,15 +34,15 @@ if (isset($_POST['title'], $_POST['description'], $_POST['pays'], $_POST['legume
                 else :
                     // je donne un nouveau nom à l'image pour éviter les doublons
                     $images_name = uniqid() . '_' . $images['name'];
-                    $img_folder = 'ecf2/assets/img/';
+                    $img_folder = 'assets/img/';
                     // dirname(dirname(__DIR__)) . '/assets/img/';
-                    @mkdir($img_folder, 0777);
+                    //@mkdir($img_folder, 0777);
                     $dir = $img_folder . $images_name;
-
-                    $move_file = @move_uploaded_file($images['tmp_name'], $dir);
-
+                    
+                    $move_file = move_uploaded_file($images['tmp_name'], $dir);
                     if (!$move_file) :
-                        $msg_error = "problème pendant l'upload";
+                        $msg_error = "problème pendant l'upload de l'image";
+                        header("location:http://localhost/recettes-bio2/ecf2/addform.php?message=$msg_error");
                     else :
 
                         addrecettes($title, $description, $pays, $legumes, $fruits, $images_name);

@@ -1,8 +1,8 @@
 
 <?php //var_dump($_POST['pseudo'],$_POST['mail'],$_POST['password']);
 session_start();
-require './config/datamanager.php';
-require './config/validData.php';
+require '../config/datamanager.php';
+require '../config/validData.php';
 
 
 if (!empty($_POST['pseudo']) && !empty($_POST['mail']) && !empty($_POST['password']) && !empty($_POST['password_verif'])) {
@@ -13,7 +13,7 @@ if (!empty($_POST['pseudo']) && !empty($_POST['mail']) && !empty($_POST['passwor
 
     adduser($_POST['pseudo'], $_POST['mail'], $pwh);
     $_SESSION["user"] = $_POST['pseudo'];
-    header('location:http://localhost/recettes-bi2o/ecf2/crud.php');
+    header('location:http://localhost/recettes-bio2/ecf2/crud.php');
   } else {
     //créer mess 2 mots pass non identique
     $message = 'Erreur mot de passe non identique';

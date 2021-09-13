@@ -1,6 +1,6 @@
 <?php
-require './config/validData.php';
-require './config/datamanager.php';
+require '../config/validData.php';
+require '../config/datamanager.php';
 
 
 $ext = array('png', 'jpg', 'jpeg', 'gif');
@@ -35,12 +35,12 @@ if (isset($_POST['title'], $_POST['description'], $_POST['pays'], $_POST['legume
                 else :
                     // je donne un nouveau nom à l'image pour éviter les doublons
                     $images_name = uniqid() . '_' . $images['name'];
-                    $img_folder = 'ecf2/assets/img/';
+                    $img_folder = 'assets/img/';
                     // dirname(dirname(__DIR__)) . '/assets/img/';
-                    @mkdir($img_folder, 0777);
+                    //@mkdir($img_folder, 0777);
                     $dir = $img_folder . $images_name;
 
-                    $move_file = @move_uploaded_file($images['tmp_name'], $dir);
+                    $move_file = move_uploaded_file($images['tmp_name'], $dir);
 
                     if (!$move_file) :
                         $msg_error = "problème pendant l'upload";
@@ -48,7 +48,7 @@ if (isset($_POST['title'], $_POST['description'], $_POST['pays'], $_POST['legume
 
                         update_recettes_by_id($title, $description, $pays, $legumes, $fruits, $images_name, $id);
                         $message = 'Félicitation!! Recette modifiée';
-                        header("location:http://localhost/recettes-bio2/crud.php?message=$message");
+                        header("location:http://localhost/recettes-bio2/ecf2/crud.php?message=$message");
 
                     endif;
                 endif;

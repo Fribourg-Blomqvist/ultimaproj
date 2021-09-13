@@ -20,6 +20,7 @@ if ($_SESSION['admin'] != 1) {
 
 <body>
     <?php include '../requ/header.php'; ?>
+   
     <h2>Ajouter une nouvelle recette</h2>
     <form action="add.php" method="post" enctype="multipart/form-data">
         <label for="name">Title :</label>
@@ -39,6 +40,10 @@ if ($_SESSION['admin'] != 1) {
         <button type="submit">Save</button>
 
     </form>
+    <?php
+    if(isset($_GET['message'])){
+        echo $_GET['message'];
+    }?>
     <?php include '../requ/footer.php'; ?>
 
 </body>
