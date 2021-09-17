@@ -36,7 +36,7 @@ if ($_SESSION['admin'] != 1) {
         <input type="hidden" name="MAX_FILE_SIZE" value="4194304"> <!-- 4Mo => 1024*1024*4 -->
         <input type="file" id="images " name="images" required>
 
-        <button type="submit">Save</button>
+        <button type="submit">Ajout</button>
 
     </form>
     <?php
