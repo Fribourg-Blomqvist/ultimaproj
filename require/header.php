@@ -11,10 +11,6 @@
   <ul id="menu">
     <li id="home">
       <a href="../index.html">Accueil</a>
-      <!-- <ul class="sub-menu">
-                    <li>Qui Sommes Nous?</li>
-                    <li>Ou Livrons nous?</li>
-                </ul> -->
     </li>
     <li>
       <a href="https://www.online-bio.fr/">Boutique</a>

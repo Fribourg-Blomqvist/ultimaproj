@@ -1,15 +1,15 @@
 
-<?php //var_dump($_POST['pseudo'],$_POST['mail'],$_POST['password']);
+<?php 
 session_start();
 require '../config/datamanager.php';
 require '../config/validData.php';
 
 
 if (!empty($_POST['pseudo']) && !empty($_POST['mail']) && !empty($_POST['password']) && !empty($_POST['password_verif'])) {
-  //var_dump($_POST['pseudo'],$_POST['mail'],$_POST['password']);
+
   if ($_POST['password'] == $_POST['password_verif']) {
     $pwh = password_hash($_POST['password'], PASSWORD_DEFAULT);
-    //var_dump(password_verify($_POST['password'],$pwh));
+
 
     adduser($_POST['pseudo'], $_POST['mail'], $pwh);
     $_SESSION["user"] = $_POST['pseudo'];

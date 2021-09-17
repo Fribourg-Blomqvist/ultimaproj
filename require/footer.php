@@ -11,7 +11,7 @@
       <h2>Catégories</h2>
       <ul>
         <li><a href="http://www.online-bio.fr/">La Boutique</a></li>
-        <li><a href="../producteur1.html">Nos Producteurs</a></li>
+        <li><a href="../producteur.html">Nos Producteurs</a></li>
         <li><a href="../recettes.php">Nos Recettes</a></li>
       </ul>
     </div>

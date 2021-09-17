@@ -31,7 +31,7 @@ body {
     font-size: 2em;
 }
 
-/* -----MENU----- */
+/*****MENU*****/
 a {
     text-decoration: none;
     color: black;
@@ -47,7 +47,9 @@ nav {
     color: black;
     z-index: 2;
 }
-/* -----Logo----- */
+/********/
+
+/*****Logo*****/
 .logo  {
     width: 180px;
     height: 100px;
@@ -68,7 +70,7 @@ nav {
 	-webkit-animation: ob 3s cubic-bezier(0.075, 0.820, 0.165, 1.000) infinite alternate-reverse forwards;
 	        animation: ob 3s cubic-bezier(0.075, 0.820, 0.165, 1.000) infinite alternate-reverse forwards;
 }
-/* -----anim Logo----- */
+/*****anim Logo*****/
  
 @-webkit-keyframes ob {
   from {
@@ -138,8 +140,9 @@ nav {
             animation-timing-function: ease-out;
   }
 }
+/********/
 
-
+/*****Media Queries*****/
 
 @media screen and (max-width:700px) {
     .logo {
@@ -151,7 +154,9 @@ nav {
         font-size: 4vw;
     }
 }
+/********/
 
+/*****Menu*****/
 #menu {
     display: flex;
     width: 60vw;
@@ -192,10 +197,11 @@ nav {
     left: 0 !important;
 }
 
+/********/
 
 
 
-/* -----BURGER----- */
+/*****BURGER******/
 
 #burger {
     display: none;
@@ -532,9 +538,6 @@ nav {
         padding: 3em;
         transition: 1s;
         z-index: 2;
-        /*box-shadow: 10px 10px 31px 0px rgba(0, 0, 0, 0.49);
-        -webkit-box-shadow: 10px 10px 31px 0px rgba(0, 0, 0, 0.49);
-        -moz-box-shadow: 10px 10px 31px 0px rgba(0, 0, 0, 0.49);*/
     }
 
     #burger {

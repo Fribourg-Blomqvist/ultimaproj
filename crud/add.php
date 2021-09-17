@@ -35,8 +35,7 @@ if (isset($_POST['title'], $_POST['description'], $_POST['pays'], $_POST['legume
                     // je donne un nouveau nom à l'image pour éviter les doublons
                     $images_name = uniqid() . '_' . $images['name'];
                     $img_folder = '../assets/img/';
-                    // dirname(dirname(__DIR__)) . '/assets/img/';
-                    //@mkdir($img_folder, 0777);
+                
                     $dir = $img_folder . $images_name;
                     
                     $move_file = move_uploaded_file($images['tmp_name'], $dir);

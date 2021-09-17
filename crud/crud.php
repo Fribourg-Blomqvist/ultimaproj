@@ -59,8 +59,7 @@ $size = count($recettes);
 
             <?php endforeach; ?>
             <?php
-            //var_dump($_SESSION)
-
+            
             if (isset($_SESSION['admin']) && $_SESSION['admin'] == true) {
             ?>
               <td>

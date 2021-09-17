@@ -18,6 +18,7 @@ $recettes = select_all_recettes();
 
 <body style="background: url(assets/img/bg-recettes.png) no-repeat; background-position-x: 10%;">
     <!-- NAVBAR -->
+
     <nav id="nav">
         <div id="burger">
             <span id="spantop" class="spantopclose"></span>
@@ -31,10 +32,6 @@ $recettes = select_all_recettes();
         <ul id="menu">
             <li id="home">
                 <a href="index.html">Accueil</a>
-                <!-- <ul class="sub-menu">
-                    <li>Qui Sommes Nous?</li>
-                    <li>Ou Livrons nous?</li>
-                </ul> -->
             </li>
             <li>
                 <a href="https://www.online-bio.fr/">Boutique</a>
@@ -48,14 +45,13 @@ $recettes = select_all_recettes();
 
         </ul>
     </nav>
+
     <!-- END NAVBAR -->
 
 
     <main class="page-content">
         <div class="contenaire">
             <?php
-            // var_dump($recettes);
-            // die();
             foreach ($recettes as $row) {
             ?>
 
@@ -72,8 +68,11 @@ $recettes = select_all_recettes();
             ?>
         </div>
     </main>
+
     <!-- END SECTION -->
+    
     <!-- FOOTER -->
+
     <footer>
         <a href="#nav">
             <i class="fas fa-chevron-circle-up" id="header"></i>
@@ -115,7 +114,9 @@ $recettes = select_all_recettes();
             <i class="fab fa-instagram-square"></i>
         </div>
     </footer>
+
     <!-- END FOOTER -->
+    
     <script src="assets/javascript/script.js"></script>
     <script src="assets/javascript/formu.js"></script>
 </body>

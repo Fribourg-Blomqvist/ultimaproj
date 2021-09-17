@@ -1,4 +1,4 @@
-<?php //var_dump($_POST['pseudo'],$_POST['password']);
+<?php 
 session_start();
 
 
